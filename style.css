@@ -4,6 +4,7 @@ body {
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   color: #333;
 }
 
@@ -12,26 +13,25 @@ a {
   color: #004080;
 }
 
-/* ヘッダー */
+/* ✅ ヘッダー */
 header {
   background-color: #004080;
   color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   text-align: center;
+  width: 100%;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
 }
 
-.back-link {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: #ccc;
-  font-size: 0.9rem;
+.tagline {
+  font-size: 0.95rem;
+  color: #eee;
+  margin-top: 0.5rem;
 }
 
 /* メンバー紹介用（member.html） */
@@ -96,22 +96,22 @@ header h1 {
   font-weight: bold;
 }
 
-/* 中央画像表示用 */
+/* ✅ カレンダー画像中央表示 */
 .center-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .calender {
   max-width: 100%;
   height: auto;
-  width: auto;
-  max-height: 80vh; /* 画面縦幅の80%までに制限 */
   object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 auto;
 }
